@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-14",
+    "noble": "https://github.com/jacobrosenthal/noble.git#highsierra",
+    "node-beacon-scanner": "^0.2.2"
+  }
+}
