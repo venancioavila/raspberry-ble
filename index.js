@@ -7,4 +7,4 @@ device.listPairedDevices(console.log)
 // device.on('finished', console.log(console, 'finished'))
 device.on('found', (address, name) => {
     console.log({address, name})
-})
+}).scan()
