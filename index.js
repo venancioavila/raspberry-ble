@@ -1,14 +1,5 @@
-const BeaconScanner = require('node-beacon-scanner');
-const scanner = new BeaconScanner();
+const bluetooth = require('node-bluetooth')
 
-// Set an Event handler for becons
-scanner.onadvertisement = (ad) => {
-  console.log(JSON.stringify(ad, null, '  '));
-};
+const device = new bluetooth.DeviceINQ();
 
-// Start scanning
-scanner.startScan().then(() => {
-  console.log('Started to scan.')  ;
-}).catch((error) => {
-  console.error(error);
-});
+device.listPairedDevices(console.log)
